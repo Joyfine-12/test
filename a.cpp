@@ -6,30 +6,7 @@ using namespace std;
 
 //为什么总是SIGTERM
 void solve() {
-    int n, m; cin >> n >> m;
-
-    map<int, int> cnt0, cnt1;
-    for (int i = 1; i <= n; i ++) {
-        for (int j = 1; j <= m; j ++) {
-            int num; cin >> num;
-            if ((i + j) % 2) {
-                cnt1[num] ++;
-            } else {
-                cnt0[num] ++;
-            }
-        }
-    }
-
-    int ch = 1;
-    for (auto i : cnt0) {
-        if (cnt1.count(i.first)) {
-            ch ++;
-            break;
-        }
-    }
-
-    // cout << "sd\n";
-    cout << cnt1.size() + cnt0.size() - ch << "\n";
+    printf("%d", 'A' + 1);
 }
 
 signed main() {

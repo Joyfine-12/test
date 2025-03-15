@@ -4,6 +4,7 @@ using namespace std;
 
 #define int long long
 
+//为什么总是SIGTERM
 void solve() {
     int n, m; cin >> n >> m;
 

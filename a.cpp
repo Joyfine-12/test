@@ -28,7 +28,7 @@ void solve() {
         }
     }
 
-    cout << "sd\n";
+    // cout << "sd\n";
     cout << cnt1.size() + cnt0.size() - ch << "\n";
 }
 

@@ -1,16 +1,17 @@
 #include <bits/stdc++.h>
 
-using namespace std;
-
 #define int long long
 
-//为什么总是SIGTERM
-void solve() {
-    printf("%d", 'A' + 1);
-}
+int x = 42;
+const int* p = &x;
+int const* q = &x;
+int* const m = &x;
+
+int a = 24;
 
 signed main() {
-    ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    int _ = 1; cin >> _;
-    while (_ --) solve();
+    *m = a;
+    p = &a;
+    q = &a;
+    // *q = a;
 }

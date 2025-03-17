@@ -14,4 +14,5 @@ signed main() {
     p = &a;
     q = &a;
     // *q = a;
+    return 0;
 }
